@@ -1,7 +1,7 @@
 import yt_dlp
 import os
 
-# obtener ruta de descargas
+# path downloads
 def get_downloads_folder():
     if os.name == 'nt':  # alternative windows
         from winreg import OpenKey, QueryValueEx, HKEY_CURRENT_USER
@@ -14,7 +14,7 @@ def get_downloads_folder():
 
 SAVE_PATH = get_downloads_folder()
 
-# option mp4
+
 def download_video(link):
     ydl_opts = {
         'format': 'best',
@@ -23,7 +23,7 @@ def download_video(link):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
 
-# option mp3
+
 def download_audio(link):
     ydl_opts = {
         'format': 'bestaudio/best',
@@ -37,7 +37,7 @@ def download_audio(link):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([link])
 
-# main principal
+
 if __name__ == "__main__":
     print("🎥 Welcome to the Video Downloader 🎶")
     print("====================================\n")

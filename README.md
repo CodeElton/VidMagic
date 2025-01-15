@@ -12,16 +12,18 @@ VidMagic is a simple yet powerful Python tool that allows you to download videos
 1. Clone the repository:
 ```bash
   git clone https://github.com/CodeElton/VidMagic.git
-  cd VidMagic```
+  cd VidMagic
+```
 
 2. Install the required dependencies:
 ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
+```
 
 3. Run the program:
 ```bash
-   python vidmagic.py```
-
+   python vidmagic.py
+```
 
 📋 Usage
 1. Enter the link to the video you want to download.
@@ -43,6 +45,7 @@ Choose your preferred format:
 
 🔷 Your choice (1 or 2): 1```
 Output: "Your video/audio has been successfully downloaded to the Downloads folder!"
+```
 
 🔮 Future Features
 🧙 Add support for multiple downloads at once.
@@ -58,6 +61,7 @@ Libraries:
 pytube for handling video downloads.
 Standard Python libraries (os, sys).
 🌟 Show Your Support
+
 If you like this project, please consider giving it a ⭐ on GitHub! 😊
 
 💡 Happy downloading with VidMagic! Stay creative and enjoy your media! 💡
